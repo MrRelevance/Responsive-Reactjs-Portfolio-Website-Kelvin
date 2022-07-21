@@ -1,0 +1,248 @@
+.contact {
+	background-color: var(--first-color);
+}
+
+.contact__wrapper {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.contact__description {
+	margin-top: 1rem;
+}
+
+.contact__left {
+	flex-basis: 30%;
+}
+
+.c__left-contacts {
+	margin: 3rem 0;
+}
+
+.c-contact {
+	display: flex;
+	align-items: center;
+	margin-bottom: 1.5rem;
+	background-color: var(--white-color);
+	border-radius: 10px;
+	padding: 1.5rem;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.075);
+	transition: 0.4s ease;
+}
+
+.c-contact:hover {
+	background-color: #ffffffa1;
+}
+
+.c-left-icon {
+	margin-right: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	height: 50px;
+	background-color: var(--green-color);
+	border-radius: 50%;
+}
+
+.c-icon {
+	font-size: 1.5rem !important;
+	color: var(--white-color);
+}
+
+.c-email .c-left-icon {
+	background-color: var(--yellow-color);
+}
+
+.c-location .c-left-icon {
+	background-color: var(--orange-color);
+}
+
+.c-contact-title h4 {
+	font-size: 1.2rem;
+}
+
+.c-contact-title span {
+	font-size: 0.78rem;
+	font-weight: 500;
+	margin-top: 0rem;
+	display: block;
+	color: var(--text-color);
+}
+
+/* left socials ===========================  */
+.c__left-socials {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 170px;
+}
+
+.c__left-socials a {
+	color: var(--green-color);
+}
+
+.c-s-icon {
+	font-size: 2.8rem !important;
+	padding: 0.8rem;
+	background-color: var(--white-color);
+	border-radius: 50%;
+	transition: 0.3s;
+}
+
+.c-s-icon:hover {
+	color: var(--white-color);
+	background-color: var(--orange-color);
+}
+
+/* Right Side ============================= */
+.contact__right {
+	flex-basis: 50%;
+	padding: 1rem 2.5rem 2.5rem 2.5rem;
+	border-radius: 10px;
+	background-color: var(--white-color);
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.075);
+}
+
+.form-input {
+	margin: 10px auto;
+	position: relative;
+	display: flex;
+	align-items: center;
+	/* justify-content: center; */
+}
+
+input,
+textarea {
+	background-color: transparent;
+	border: 0;
+	border-bottom: 1px solid var(--orange-color);
+	padding: 15px 10px 15px 50px;
+	font-size: 1rem;
+	/* line-height: 30px; */
+	outline: 0;
+	display: block;
+	width: 100%;
+	transition: 0.3s ease-in-out;
+}
+
+.input:focus,
+textarea:focus,
+.input:active,
+textarea:active {
+	border-bottom: 1.5px solid var(--green-color);
+	background-color: var(--first-color);
+}
+
+.input-icon {
+	position: absolute;
+	left: 15px;
+	top: 0;
+	font-size: 1.4rem;
+	color: var(--green-color);
+	height: 100%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	margin-top: 1rem;
+}
+
+input::placeholder,
+textarea::placeholder {
+	font-size: 0.9rem;
+	font-weight: 400;
+	color: #b4b4b4;
+}
+
+.submit-btn {
+	margin-top: 1rem;
+	padding: 13px 25px;
+	outline: none;
+	border: none;
+	border-radius: 50px;
+	font-size: 1rem;
+	font-weight: 500;
+	background-color: var(--orange-color);
+	color: var(--white-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.3s ease;
+	cursor: pointer;
+}
+
+.submit-btn:hover {
+	background-color: var(--green-color);
+}
+
+.submit-icon {
+	margin-right: 0.6rem;
+	font-size: 1.4rem;
+}
+
+/* Thank You ==================== */
+.thank__you {
+	margin-top: 1rem;
+	font-size: 0.85rem;
+	font-weight: 500;
+	color: #079c07;
+	max-width: 85%;
+	text-align: left;
+}
+
+/* .thank__you:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 4px;
+	border-radius: 50px;
+	height: 40px;
+	background-color: var(--orange-color);
+} */
+
+@media screen and (max-width: 769px) {
+	.c-left-icon {
+		width: 40px;
+		height: 40px;
+	}
+
+	.c-icon {
+		font-size: 1.1rem !important;
+	}
+
+	.c-contact-title h4 {
+		font-size: 1rem;
+	}
+}
+
+@media screen and (max-width: 426px) {
+	.contact__wrapper {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.c__left-contacts {
+		/* margin: auto; */
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.c-contact {
+		text-align: left;
+		margin-bottom: 1.1rem;
+	}
+
+	.c__left-socials {
+		margin: auto;
+		margin-bottom: 2rem;
+	}
+
+	.thank__you {
+		max-width: 100%;
+	}
+}

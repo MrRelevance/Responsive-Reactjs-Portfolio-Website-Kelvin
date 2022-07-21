@@ -1,0 +1,167 @@
+.testimonials {
+	/* background-color: var(--first-color); */
+	/* margin-top: 2rem; */
+}
+
+.testimonials .section__title {
+	max-width: 400px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.testimonials__data {
+	margin: 4rem auto;
+	background-color: var(--white-color);
+	max-width: 650px;
+	padding: 4rem 5rem;
+	border-radius: 10px;
+	box-shadow: 5px 24px 80px rgba(0, 0, 0, 0.06);
+	position: relative;
+}
+
+.testimonial {
+	cursor: grab;
+}
+
+.comment {
+	font-size: 1.5rem;
+	color: var(--text-color);
+	letter-spacing: 1px;
+	line-height: 1.7;
+}
+
+.person {
+	display: flex;
+	align-items: center;
+	margin-top: 2rem;
+}
+
+.person__img {
+	width: 40px;
+	height: 40px;
+	overflow: hidden;
+	border-radius: 50%;
+	margin-right: 1rem;
+}
+
+.p-img {
+	aspect-ratio: 1/1;
+}
+
+.swiper-button-prev {
+	/* display: none; */
+	/* bottom: 0 !important; */
+	left: 31.5rem !important;
+	top: 17.55rem !important;
+	width: 35px !important;
+	height: 35px !important;
+	border-radius: 5px;
+	background-color: var(--green-color);
+	transition: all 0.3s ease;
+}
+
+.swiper-button-prev:hover {
+	background-color: var(--first-color);
+}
+
+.swiper-button-next {
+	top: 17.55rem !important;
+	right: 4.3rem !important;
+	width: 35px !important;
+	height: 35px !important;
+	border-radius: 5px;
+	background-color: var(--first-color);
+	transition: all 0.3s ease;
+}
+
+.swiper-button-next:hover {
+	background-color: var(--green-color);
+}
+
+.swiper-button-prev:after {
+	/* display: none; */
+	font-size: 1rem !important;
+	color: var(--first-color);
+	transition: all 0.3s ease;
+	font-weight: 700;
+}
+
+.swiper-button-next:after {
+	/* display: none; */
+	font-size: 1rem !important;
+	color: var(--orange-color);
+	transition: all 0.3s ease;
+	font-weight: 700;
+}
+
+.swiper-button-prev:hover:after {
+	color: var(--orange-color);
+}
+
+.swiper-button-next:hover:after {
+	color: var(--first-color);
+}
+
+@media screen and (max-width: 769px) {
+	.comment {
+		font-size: 1.4rem;
+	}
+}
+
+@media screen and (max-width: 426px) {
+	.testimonials__data {
+		padding: 2.5rem;
+	}
+
+	.comment {
+		font-size: 1.3rem;
+		line-height: 1.5;
+		letter-spacing: normal;
+		text-align: center;
+	}
+
+	.person {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-top: 1rem;
+	}
+
+	.person-name,
+	.person-portfolio {
+		text-align: center;
+	}
+
+	.person__img {
+		margin: 1rem auto;
+	}
+
+	.swiper-button-next,
+	.swiper-button-prev {
+		display: none !important;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.testimonials__data {
+		padding: 2rem;
+	}
+
+	.comment {
+		font-size: 1.2rem;
+		line-height: 1.5;
+		letter-spacing: normal;
+		text-align: center;
+	}
+
+	.person-name,
+	.person-portfolio {
+		text-align: center;
+	}
+
+	.person__img {
+		/* width: 30px;
+		height: 30px; */
+	}
+}

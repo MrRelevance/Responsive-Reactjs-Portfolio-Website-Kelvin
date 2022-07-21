@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	font-family: "Poppins", sans-serif;
+}
+
+:root {
+	/* COLORS ================== */
+	--first-color: #f8f7f1;
+	--green-color: #286f6c;
+	--orange-color: #f26440;
+	--title-color: #0d2f3f;
+	--text-color: #426677;
+	--white-color: #fff;
+	--yellow-color: #f0c149;
+
+	/* TRANSITION =================== */
+	--transition: 0.3s all ease;
+}
+
+::selection {
+	color: var(--white-color);
+	background-color: var(--green-color);
+}
+
+::-moz-selection {
+	color: var(--white-color);
+	background-color: var(--green-color);
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	color: var(--text-color);
+	transition: var(--transition);
+}
+
+/* BASE ======================== */
+h1,
+h2,
+h3,
+h4 {
+	color: var(--title-color);
+	font-weight: 600;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+/* REUSEABLE CLASSES ======================== */
+.container {
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+.grid {
+	display: grid;
+}
+
+.main {
+	overflow: hidden;
+}
+
+.section {
+	padding: 6.5rem 0 6rem;
+}
+
+.section__title {
+	font-size: 40px;
+	font-weight: 600;
+	color: var(--title-color);
+	line-height: 1.2;
+}
+
+.h3__title {
+	font-weight: 500;
+}
+
+@media screen and (max-width: 1024px) {
+	.container {
+		margin-left: 1.5rem;
+		margin-right: 1.5rem;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.container {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.section__title {
+		font-size: 30px;
+	}
+
+	.h3__title {
+		font-weight: 600;
+		font-size: 1rem;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.h3__title {
+		font-size: 0.85rem;
+	}
+}
+
+@media screen and (max-width: 590px) {
+}
